@@ -9,12 +9,15 @@ def llista():
     for i in range(size):
         num = int(input("Introduce un número: "))
         this_list.append(num)
+        while this_list[i] < 0:
+            this_list[i] = int(input("Introduce un número entero: "))
         count = this_list[i] + count
 # Muestra por pantalla el resultado obtenido
     print(("\nLa suma total de todos los valores introducidos es: %d") % (count))
 
+# Ejecutamos la función creada anteriormente
 def main():
     llista()
 
 if __name__ == "__main__":
-   main()
+    main()

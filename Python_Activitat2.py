@@ -6,6 +6,7 @@ def llista():
 # Muestra por pantalla el resultado obtenido
     print(a)
 
+# Ejecutamos la función creada anteriormente
 def main():
     llista()
 
