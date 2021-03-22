@@ -1,3 +1,5 @@
+import funcions
+
 def llista():
 # El usuario introduce por teclado un número del 1 al 20
     num = int(input("Introduce un número: "))
@@ -11,6 +13,7 @@ def multiplos(num):
     print([num * x for x in range(100) if (num * x) < 100])
 
 def main():
+    funcions.main_menu("num")
     n = llista()
     multiplos(n)
 
